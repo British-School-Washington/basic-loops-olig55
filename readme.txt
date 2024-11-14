@@ -1,8 +1,12 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/XLJGVPzr)
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=17137346)
-Problem 1: Multiplication Table
-Write a program that asks the user to enter a number. Then, using a for loop, 
-print the multiplication table for that number from 1 to 10.
+def multiplication_table(number, up_to=10):
+    print(f"Multiplication Table for {number}:")
+    for i in range(1, up_to + 1):
+        print(f"{number} x {i} = {number * i}")
+
+number = int(input("Enter a number for the multiplication table: "))
+up_to = int(input("Enter the range (up to): "))
+
+multiplication_table(number, up_to)
 
 Problem 2: Guess the Number
 Write a program that generates a random number between 1 and 
